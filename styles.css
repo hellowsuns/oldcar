@@ -20,26 +20,46 @@ body {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    width: 90%; /* 화면 크기에 맞게 조정 */
-    max-width: 500px; /* 최대 너비 설정 */
+    width: 100%; /* 화면 크기에 맞게 조정 */
+    max-width: 800px; /* 최대 너비 설정 */
     box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
     display: flex;
     flex-direction: column; /* 내부 요소를 세로 방향으로 배치 */
     align-items: center; /* 내부 요소를 중앙 정렬 */
 }
 
-/* 비밀번호 입력창 스타일 */
+/* 비밀번호 입력창과 버튼을 같은 행에 배치 */
+.input-container {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 100%; /* 부모 박스의 너비에 맞게 조정 */
+    max-width: 500px; /* 최대 너비 설정 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
+}
+
 #password {
     padding: 10px;
     border: 2px solid #000;
     background-color: #fff;
     color: #000;
-    width: 100%; /* 부모 박스의 너비에 맞게 조정 */
+    flex: 1; /* 입력창이 가능한 한 많은 공간을 차지하도록 설정 */
+    margin-right: 10px; /* 버튼과의 간격 설정 */
     box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
-    margin-bottom: 10px;
 }
 
-/* 안내 문구와 '영상 재생' 버튼 화면 스타일 */
+#submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
+}
+
+/* 안내 문구와 '자세히 살펴보기' 버튼 화면 스타일 */
 #info-screen {
     text-align: center;
     z-index: 2;
@@ -78,7 +98,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     width: 90%; /* 화면 크기에 맞게 조정 */
-    max-width: 700px; /* 최대 너비 설정 */
+    max-width: 800px; /* 최대 너비를 좀 더 넓게 설정 */
     box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
 }
 
