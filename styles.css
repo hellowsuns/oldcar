@@ -8,11 +8,10 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     background-image: url('initial_background.jpg'); /* 초기 배경이미지 */
-    background-size: auto;
+    background-size: contain; /* 배경 이미지가 화면에 맞게 조정됨 */
     background-position: center;
     background-repeat: no-repeat;
 }
-
 /* 비밀번호 입력창과 안내창 박스 스타일 */
 .box {
     background-color: rgba(0, 0, 0, 0.8);
