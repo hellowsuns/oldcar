@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비밀번호 화면</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 비밀번호 입력 화면 -->
+  <div id="lockscreen">
+    <div id="initial-screen" class="box">
+      <p>차 문이 잠겨있다. 차 키를 찾아야 할 것 같다.</p>
+      <input type="password" id="password" placeholder="사용할 열쇠의 번호를 입력하세요" style="width: 300px;">
+      <button onclick="checkPassword()">확인</button>
+    </div>
+  </div>
+
+  <!-- 안내창 -->
+  <div id="info-screen" class="box hidden">
+    <p>차 문이 열렸다. 블랙박스에 녹화된 영상이 있다.</p>
+    <button onclick="showVideoPopup()">영상 재생</button>
+  </div>
+
+  <!-- 동영상 팝업 -->
+  <div id="video-popup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close" onclick="closeVideoPopup()">&times;</span>
+      <video id="video-player" controls>
+        <source src="blackbox_video.mp4" type="video/mp4">
+        브라우저가 동영상을 지원하지 않습니다.
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
