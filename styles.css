@@ -23,6 +23,9 @@ body {
     width: 90%; /* 화면 크기에 맞게 조정 */
     max-width: 500px; /* 최대 너비 설정 */
     box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
+    display: flex;
+    flex-direction: column; /* 내부 요소를 세로 방향으로 배치 */
+    align-items: center; /* 내부 요소를 중앙 정렬 */
 }
 
 /* 비밀번호 입력창 스타일 */
@@ -37,6 +40,13 @@ body {
 }
 
 /* 안내 문구와 '영상 재생' 버튼 화면 스타일 */
+#info-screen {
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 20px; /* 버튼과 텍스트 간격 설정 */
+}
+
+/* '자세히 살펴보기' 버튼 스타일 */
 #info-screen button {
     padding: 10px 20px;
     border: none;
@@ -46,7 +56,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     display: block;
-    margin: 20px auto;
+    margin: 20px auto; /* 버튼을 중앙에 배치하고 텍스트와 버튼 간 간격 설정 */
 }
 
 /* 팝업 스타일 */
