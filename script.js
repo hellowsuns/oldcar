@@ -12,7 +12,7 @@ function checkPassword() {
         document.body.style.backgroundImage = "url('unlocked_background.jpg')"; // 비밀번호 입력 후 배경이미지 변경
         document.getElementById('password').value = ''; // 비밀번호 입력창 초기화
     } else {
-        alert('비밀번호가 틀렸습니다.');
+        alert('맞지 않는 열쇠다.');
     }
 }
 
